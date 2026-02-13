@@ -18,15 +18,12 @@ public:
     tree(){
         
     }
-    
-        
-    
     int level(node* root){
         if(root==NULL) return 0;
         return 1+ max(level(root->left),level(root->right));
         
     }
-    void print(node* root,int curr,int level){
+    void print(node* root,int curr,int level){ // calling the level function.
         if(root==NULL) return ;
         if(curr==level) {
             cout<<root->val<<"->";
