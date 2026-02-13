@@ -51,7 +51,10 @@ public:
 };
 int main(){
     class solution S;
-    vector<vector<int>> image={{1,1,1,1,0},{1,1,0,0,1}};
+    vector<vector<int>> image={{1,1,1,1,0},
+                               {1,1,0,0,1},
+                               {1,1,1,1,1}
+                           };
     int sr=1;
     int sc=1;
     int colour=2;
